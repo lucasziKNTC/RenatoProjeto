@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "PROJETO01.Modelos/1.0.0": {
+        "runtime": {
+          "PROJETO01.Modelos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PROJETO01.Modelos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

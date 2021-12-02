@@ -1,0 +1,35 @@
+﻿@model PROJETO01.Modelos.Cidade
+
+    <form asp-controller="Cidade" asp-action="AdicionarConfirmacao" method="post">
+
+        <div class="mb-3">
+            <label for="CidadeID" class="form-label">ID:</label>
+            <input asp-for="CidadeID" type="text" class="form-control" placeholder="Digite o ID da cidade" />
+        </div>
+
+        <div class="mb-3">
+            <label for="Nome" class="form-label">Nome:</label>
+            <input asp-for="Nome" type="text" class="form-control" placeholder="Digite o nome da cidade." />
+        </div>
+
+        <div class="mb-3">
+            <label for="UF" class="form-label">Estado:</label>
+            @Html.DropDownListFor(
+                    item => item.UF, 
+                    new SelectList(ViewBag.Estados, "UF", "Nome"),
+                    "-- Selecione --",
+                    new { @class = "form-control" }
+                )
+        </div>
+
+        <hr />
+
+        <a href="#" class="btn btn-secondary" onclick="javascript:history.back()">
+            VOLTAR
+        </a>
+
+        <button type="submit" class="btn btn-success float-right">
+            SALVAR
+        </button>
+    </form>
+
